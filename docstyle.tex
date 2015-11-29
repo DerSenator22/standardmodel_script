@@ -1,0 +1,59 @@
+% define new pagestyle
+% new length for the page header
+\newlength\manualheadwidth
+\setlength{\manualheadwidth}{\textwidth}
+\addtolength\manualheadwidth{1cm}
+
+% new length for indented subsubsections
+\newlength\indentation
+\setlength{\indentation}{1.5cm}
+
+\newlength\smallertextwidth
+\setlength{\smallertextwidth}{\textwidth}
+\addtolength\smallertextwidth{-\indentation}
+
+% options for pagestyle w/ headsepline, pagenumber and Chapter-/Sectiontitle on the outside 
+\usepackage{scrpage2}
+\pagestyle{scrheadings}
+\clearscrheadings
+\ofoot{\pagemark}
+\ohead{\headmark}
+\setheadwidth[0pt]{\manualheadwidth}
+\setfootwidth{head}
+\setheadsepline{1pt}
+
+% Colorset
+\usepackage{xcolor}
+\definecolor{dpurple}{HTML}{C01111}
+\definecolor{lpurple}{HTML}{DB4848}
+%\definecolor{dpurple}{HTML}{076A12}
+%\definecolor{lpurple}{HTML}{08951B}
+
+
+% all headings with serifs
+\addtokomafont{chapter}{\normalfont\bfseries\color{dpurple}}
+\addtokomafont{section}{\normalfont\bfseries\color{lpurple}}
+\addtokomafont{subsection}{\normalfont\color{lpurple}}
+
+% itemsep shortened
+\usepackage{enumitem}
+\setlist{itemsep=-5pt}
+
+% depiction of units
+\usepackage{siunitx}
+\sisetup{copy-decimal-marker, exponent-product=\cdot, separate-uncertainty}
+
+% nice tables
+\usepackage{booktabs}
+
+% double lined symbols
+\usepackage{bbm}
+
+
+
+\tikzset{photon/.style={decorate,decoration=snake,thick},
+fermion/.style={thick},
+gluon/.style={decorate,decoration=coil,segment length=3pt},
+vertex/.style={circle,fill=black,draw,scale=.3},
+->-/.style={decoration={markings,mark=at position 0.5 with {\arrow{>}}},
+postaction=decorate}}

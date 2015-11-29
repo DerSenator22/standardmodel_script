@@ -1,0 +1,61 @@
+% all \newcommand with *, since they do not include any \par
+% differential operators
+\newcommand*{\diff}[2]{\frac{\mathrm{d}{#1}}{\mathrm{d}{#2}}}
+\newcommand*{\ddiff}[2]{\frac{\mathrm{d}^2{#1}}{\mathrm{d}{#2}^2}}
+\newcommand*{\dddiff}[2]{\frac{\mathrm{d}^3{#1}}{\mathrm{d}{#2}^3}}
+\newcommand*{\ndiff}[2]{\frac{\mathrm{d}^n{#1}}{\mathrm{d}{#2}^n}}
+\newcommand*{\pdiff}[2]{\frac{\partial{#1}}{\partial{#2}}}
+\newcommand*{\pddiff}[2]{\frac{\partial^2{#1}}{\partial {#2}^2}}
+\let\div\relax
+\DeclareMathOperator{\div}{div}
+\DeclareMathOperator{\rot}{rot}
+\DeclareMathOperator{\grad}{grad}
+\newcommand*{\lapla}{\mathop{}\!\mathbin\Delta}
+\newcommand*{\dalam}{\tikz \node [rectangle,draw] at (0,0) {};\;}
+\newcommand*{\blubb}{\mathop{}\!\mathbin d’Alembert}
+
+
+%hilbert operators
+\newcommand*{\bra}[1]{\left\langle #1 \right|}
+\newcommand*{\ket}[1]{\left| #1 \right\rangle}
+\newcommand*{\lara}[1]{\left\langle #1 \right\rangle}
+\newcommand*{\scap}[2]{\left\langle #1 \ \middle| \ #2\right\rangle}
+\newcommand*{\exlara}[3]{\left\langle #1 \ \middle| \ #2 \ \middle| \ #3\right\rangle}
+\newcommand*{\dual}[1]{ #1 ^+}
+\newcommand*{\ddual}[1]{ #1 ^{++}}
+\newcommand*{\adjung}[1]{ #1 ^\dagger}
+\newcommand*{\op}[1]{\hat{#1}}
+\newcommand*{\conj}[1]{#1^*}
+\newcommand*{\covadjung}[2][0.75]{\xoverline[#1]{#2}} % for 'covariant 
+													  % adjungated'
+\newcommand*{\anti}[1]{\xoverline[.75]{#1}}
+
+%various operators
+\DeclareMathOperator{\graph}{graph}
+\DeclareMathOperator{\rang}{rang}
+\let\sup\relax
+\DeclareMathOperator{\sup}{sup}
+\let\inf\relax
+\DeclareMathOperator{\inf}{inf}
+\DeclareMathOperator{\lin}{lin}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\Arg}{Arg}
+\let\Re\relax
+\DeclareMathOperator{\Re}{Re}
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}
+\newcommand*{\D}{\text{D}}
+\renewcommand*{\d}{\mathop{}\mathrm{d}} % differential with adjusted distance
+\newcommand*{\id}{\mathrm{id}}
+\newcommand*{\norm}[1]{\|#1\|}
+\newcommand*{\transp}[1]{#1^\text{T}}
+\newcommand*{\abs}[1]{\left|#1\right|}
+\newcommand*{\convar}[2][\mu]{#2^{#1}}
+\newcommand*{\covar}[2][\mu]{#2_{#1}}
+
+\newcommand*{\partint}{\underset{\text{Int.}}{\overset{\text{Part.}}{=}} }
+\renewcommand\qedsymbol{$\textbf{q.\,e.\,d.}$}
+\newcommand*{\excleq}{\overset{!}{=}}
+
+\newcommand*{\e}{\text{e}}
+\renewcommand*{\i}{\text{i}}

@@ -1,0 +1,91 @@
+\documentclass[a4paper,11pt,fleqn,parskip=full,captions=tableheading,draft]{scrbook}
+\usepackage{amsmath}
+\usepackage{ifluatex}
+\ifluatex
+% Verwendung von LuaLaTeX ermöglichen
+\usepackage[no-math]{fontspec}
+\usepackage{unicode-math}
+\setmainfont[Mapping=tex-text]{Stix}
+%\setmathfont{TeX Gyre Pagella Math}
+\usepackage{polyglossia}
+\setdefaultlanguage[spelling=new,babelshorthands=true]{german}
+\else
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{stix}
+\usepackage[ngerman]{babel}
+\fi
+
+\usepackage{csquotes}  % Anführungszeichen \enquote
+\usepackage{microtype}  % Mikrotypographie
+\usepackage{amsthm,mathtools}
+\usepackage{graphicx}
+\graphicspath{{pictures/}}
+\usepackage{subfigure}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{geometry}
+\usepackage{nicefrac}
+
+% Style options for the document
+\input{docstyle}
+
+
+% Meta-Daten
+\newcommand{\lectitel}{Standardmodell der Teilchenphysik}
+\newcommand{\authors}{Christian Drews und Marius Walther}
+\date{\today}
+\usepackage[hidelinks, pdftitle={\lectitel},
+            pdfauthor={\authors}, pdfsubject=Skript]{hyperref}
+
+% self- or redefined operators and general commands
+\input{commands}
+\input{operators}
+
+\begin{document}
+
+\begin{titlepage}
+	
+\newgeometry{left=4cm,
+			 right=4cm,
+			 top=3.5cm,
+			 bottom=3cm}	
+\begin{center}
+	{\fontsize{32}{40} \selectfont \textcolor{dpurple}{\textbf{\lectitel}}}\\[1.2cm]
+	{\large Nach den Vorlesungen von}\\[0.3cm]
+	{\LARGE Professor Arno Straessner und Dr. Tania Robens, IKTP}\\[2cm]
+	\makebox[\linewidth]{\textcolor{lpurple}{\rule{\paperwidth}{1.3cm}}}
+\end{center}
+\vspace{-.7cm}
+\hspace{-4.5cm}\includegraphics[scale=.475]{Titelbild.jpg}
+\vspace{-1cm}
+\begin{center}
+	\makebox[\linewidth]{\textcolor{lpurple}{\rule{\paperwidth}{1.3cm}}}\\[1cm]
+	{\large Übertragen von \authors}\\[0.5cm]
+	{\large Sommersemester 2015}
+\end{center}
+\end{titlepage}
+\newpage
+\thispagestyle{empty}
+%TODO improve disclaimer and add Copyright info for front page picture
+\null\vspace {.66\textheight}
+Dies ist \emph{kein} offizielles Skript des Vorlesenden und enthält einige
+Anpassungen, wie ausformulierte Stichpunkte. Es wurde auf Basis
+einer Mitschrift der Vorlesung \textit{Standardmodell} an der
+Technischen Universität Dresden von Prof. \name{Straessner} und \name{Tania Robens} angefertigt.
+
+Version: \today
+\restoregeometry
+
+%TODO set chapter headings in the table of contents to \normalfont
+\tableofcontents
+
+%\include{chapter/chap1}
+%\include{chapter/chap2}
+%\include{chapter/chap3}
+%\include{chapter/chap4}
+%\include{chapter/chap5}
+
+\end{document}
