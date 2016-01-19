@@ -1,1 +1,278 @@
-\chapter{Titel erstes Kapitel}
+\chapter{Einführung}
+\section{Ziel der Vorlesung}
+Das Ziel der Vorlesung wird es sein, die theoretischen und experimentellen
+Grundlagen der Teilchenphysik zu betrachten. Wir werden Streureaktionen an 
+Beschleunigern untersuchen und Lagrangedichten und Symmetrien des 
+Standardmodells aufstellen. Dies wird uns helfen, einfache Vorhersagen des 
+Modells zu machen und diese experimentell zu überprüfen
+
+\section{Grundlagen}
+Wir wollen nun kurz einen Einblick in den aktuelle Stand des Standardmodells
+geben und einige Grundbegriffe wiederholen.
+
+\subsection{Heutiger Stand}
+Das Standarmodell besteht aus fundamentalen Freiheitsgraden. Diese sind heute
+als \definition{Elementarteilchen} bekannt. Dazu zählen die
+\definition{Leptonen}:
+%
+\begin{equation*}
+	\begin{pmatrix}
+		\nu_e \\\c = 1
+		e
+	\end{pmatrix}
+	%
+	\begin{pmatrix}
+		\nu_{\mu} \\
+		\mu
+	\end{pmatrix}
+	%
+	\begin{pmatrix}
+		\nu_{\tau} \\
+		\tau
+	\end{pmatrix}
+\end{equation*}
+%
+und die \definition{Quarks}: 
+\begin{equation*}
+	\begin{pmatrix}
+		d \\
+		u
+	\end{pmatrix}
+	%
+	\begin{pmatrix}
+		c \\
+		s
+	\end{pmatrix}
+	%
+	\begin{pmatrix}
+		t \\
+		b
+	\end{pmatrix}
+\end{equation*}
+%
+Sowie die sogenannten \definition{Eichbosonen}: $ \gamma^{\mu}$ (Photon),
+$Z^{\mu}$ (Z-Boson), $W^{\pm \mu}$ (W-Bosonen) und $g^{\mu}$ (Gluon).
+Zu dieser Liste gehört auch das \name{Higgs}-Boson, für das es 2013 den
+Nobelpreis gab.
+Das Standardmodell (SM) erklärt die Eigenschaften dieser Teilchen (sowie 
+zusammengesetzter Teilchen (Protonen, Neutronen, $ \dots $, Atomkerne, Atome, 
+Moleküle, $ \dots $).
+Für das Verständnis wird die Vereinigung der Quantenmechanik sowie der 
+Relativitätstheorie benötigt. 
+Dies führt uns dann zur Quantenfeldtheorie.
+
+\section{Wiederholung der speziellen Relativitätstheorie}
+
+In der Vorlesung sowie in der Kern- und Teilchenphysik wird hauptsächlich mit 
+den sogenannten natürlichen Einheiten gearbeitet. Dies bedeutet, dass 
+einige wichtigen Größen wie das Plancksche Wirkungsquantum und die 
+Lichtgeschwindigkeit auf 1 gesetzt werden: $ \hbar = c = 1 $.
+Daraus folgen folgende Einheiten:
+%
+\begin{equation*}
+	\left[ E \right] = \left[ m \right] = \left[ t^{-1} \right] = \left[ 
+	l^{-1} \right] = \SI{1}{\eV}
+\end{equation*}
+% 
+Die Umrechnung ergibt sich durch Multiplikation mit den auf 1 gesetzten
+Größen. Zum Beispiel:
+%
+\begin{equation*}
+	[ t ] = \SI{1}{\per \eV} \rightarrow \frac{\left( \SI{1}{\per \eV} 
+	\right)}{\hbar} = \SI{6,6e-16}{\s} \\ 
+	\left[ l \right] = \SI{1}{\per \eV} \rightarrow \frac{\left( \SI{1}{\per 
+	\eV} 
+	 \right)}{\hbar c} = \SI{1,97e-7}{\m}
+\end{equation*}
+%
+Die Lichtgeschwindigkeit (c=1) ist dabei in allen Bezugssystemen
+(Inertialsystem) gleich.
+Für die Berechnungen sind außerdem die \definition{4-Vektoren} wichtig. 
+%
+\begin{equation*}
+	x^{\mu} = \left( x^0 , x^i \right) = \left( t, \vec{x} \right) 
+\end{equation*}
+%
+Dies ist der \definition{4-Ortsvektor}.
+Für den \definition{4-Impuls} erhalten wir:
+%
+\begin{equation*}
+	p^{\mu} = \left( p^0 , p^i \right) = \left( E, \vec{p} \right) 
+\end{equation*}
+%
+Die \definition{Ableitung} schreiben wir:
+%
+\begin{equation*}
+	\partial_{\mu} = \frac{\partial}{\partial{x^{\mu}}}
+\end{equation*}
+%
+4-Vektoren mit Index oben nennen wir \definition{Kontravariant}. Diese sind in
+im vektoriellen Anteil, also in den letzten drei Komponenten positiv. Mit 
+Index unten werden \definition{kovariante} Vektoren bezeichnet. Bei diesem
+sind die unteren Einträge negativ. 
+Um die beiden Typen von Vektoren ineinander umzuwandeln benötigt es den 
+\definition{Metrischen Tensor}. 
+%
+\begin{equation*}
+	g_{\mu \nu} = g^{\mu \nu} = 
+	\begin{pmatrix} 
+		1 & 0 \\
+		0 & \mathbb{1}_{3x3}
+	\end{pmatrix}
+\end{equation*}
+%
+Die Umrechnung erfolgt dann wie folgt:
+%
+\begin{equation*}
+	 a_{\mu} := g_{\mu \nu} a^{\nu} \\
+	 a^{\nu} = g^{\mu \nu} a_{\nu}
+\end{equation*}
+%
+Die Berechnung von Skalarprodukten lässt sich über den metrischen Tensor
+herleiten:
+%
+\begin{equation*}
+	x \cdot g = x^{\mu} g_{\mu} = x^{\mu} y^{\nu} g_{\mu \nu} = x_{\mu} y_{\nu}
+	g^{\mu \nu} = x^0 y^0 - \vec{x} \vec{y}
+\end{equation*}
+%
+Zum Beispiel: 
+%
+\begin{equation*}
+	\partial_{\mu}(x,p) = \frac{\partial}{\partial{x^{\mu}}} x^{\nu} p_{\nu} = 
+	\delta_{\mu}^{\nu} p_{\nu} = p_{\mu}
+\end{equation*}
+%
+Für die relativistische Rechnung ist außerdem die
+\definition{Lorentztransformation} wichtig.
+Die Matrix $\Lambda^{\mu}_{\nu}$ entspricht der Lorentztransformation und ist 
+definiert durch:
+%
+\begin{equation*}
+	\left(\Lambda_x \right)^{\mu} \left(\Lambda_y \right)^{\nu} g_{\mu \nu}
+	= x^{\mu} y^{\nu} g_{\mu\nu}
+\end{equation*}
+%
+Wir betrachten nun das Beispiel eines Boosts:
+%
+\begin{equation*}
+	\Lambda^{\mu}_{\nu} = 
+	\begin{pmatrix}
+		\gamma & \beta_\gamma & 0 & 0 \\
+		\beta_\gamma & \gamma & 0 & 0 \\
+		0 & 0 & 1 & 1 \\
+		0 & 0 & 1 & 1
+	\end{pmatrix}
+\end{equation*}
+% 
+mit 
+%
+\begin{equation*}
+	\beta = \frac{v}{c} \\
+	\gamma = \frac{1}{\sqrt{1-\beta^2}}
+\end{equation*}
+%
+Des Weiteren betrachten wir einen Lichtstrahl von $\left( 0, \vec{0} \right)$ 
+nach $\left(t, \vec{x} \right)$.
+Da gilt: $ c = 1 $  folgt, dass $ \left| \vec{x} \right| = t $.
+Daraus folgt, dass in jedem Inertialsystem gilt: 
+%
+\begin{equation*}
+	 t^2 = {\left| \vec{x} 
+	 	\right|}^2
+\end{equation*}
+%
+Für die Elektrodynamik betrachten wir die kovariante \name{Maxwell}-Gleichung
+mit dem \definition{4-Potential} $ A^{\mu}(x) = \left( \varphi (x),
+\vec{A}(x)\right) $ und der \definition{4-Stromdichte} $ j^{\mu}(x) = \left( 
+\varrho (x), \vec{j}(x)\right) $. Der \definition{Feldstärketensor} ergibt sich
+dann wie folgt:
+%
+\begin{equation*}
+	F^{\mu \nu} = \partial^{\mu} A^{\nu}(x) - \partial^{\nu} A^{\mu}(x)
+\end{equation*}
+%
+Die \definition{\name{Maxwell}-Gleichung} hat dann folgende Form:
+\begin{equation*}
+	\partial_{\mu} F^{\mu \nu} = j^{\nu}
+\end{equation*}
+%
+Der \definition{\name{Lagrange}-Formalismus} ist vor allem für relativistische
+Theorien wichtig. Die \definition{\name{Lagrange}-Funktion} lässt sich über
+die \definition{\name{Lagrange}dichte} berechnen:
+%
+\begin{equation*}
+	L(t) = \int d^3x \mathcal{L} (x)
+\end{equation*}
+%
+Das besondere an der \name{Lagrange}dichte ist, dass sie lorentzinvariant ist,
+sich also unter der Lorentztransformation nicht verändert. Aus ihr erhalten wir
+des Weiteren die Bewegungsgleichung. Eine Forderung an Theorien ist, dass 
+diese lorentzinvariant sind.
+Am Beispiel der Elektrodynamik:
+%
+\begin{equation*}
+	\mathcal{L}(x) = \frac{1}{4} F_{\mu \nu} F^{\mu \nu} - j_{\mu} A^{\mu}
+\end{equation*}
+%
+Mit Hilfe der Euler-Lagrange-Gleichung erhalten wir die kovariante 
+\name{Maxwell}-Gleichung.
+
+\section{Wiederholung der Quantenmechanik}
+Wir betrachten zu erst allgemeine Postulate der Quantenmechanik.
+Die Quantenmechanik wird mit Hilfe von Zuständen beschrieben. Diese sind 
+Vektoren der Hilberträume. Zu jeder Observablen gehört außerdem ein hermitescher
+Operator und die Eigenwerte der Operatoren sind die Messwerte dieser
+Observablen.
+Zum Beispiel:
+%
+\begin{equation*}
+	\ket{\psi} = \sum_i{\scap{a_i}{\psi} \ket{a_i}}
+\end{equation*} 
+%
+Dabei sind $ a_i $ die Eigenwerte und $ \scap{a_i}{\psi} $ die
+Wahrscheinlichkeitsamplitude.
+$ P_{\psi_i a_i} = {\left| \scap{a_i}{\psi} \right|}^2 $ ist die 
+Wahrscheinlichkeit, den Zustand $\psi$ im Zustand $a_i$ zu finden.
+Das System wird beschrieben durch $ \exlara{\Phi}{\mathcal{O}}{\Psi} $. 
+Dabei sind $\ket{\phi}$ und $\ket{\psi}$ die Zustände. 
+Für die Zeitentwicklung gilt: 
+%
+\begin{equation*}
+	\i \frac{\d}{\d t} \exlara{\phi}{\mathcal{O}}{\psi} = 
+	\exlara{\phi}{\underbrace{\left[\mathcal{O},H\right]}_{\textit{Kommutator}}}
+	{\psi}
+\end{equation*} 
+%
+falls gilt : 
+%
+\begin{equation*}
+	\frac{\partial}{\partial t} \mathcal{O} = 0 
+\end{equation*}  
+%
+Physikalisch interessant ist vor allem $ \Phi = \Psi $. Dann erhalten wir: 
+$ \left\langle \mathcal{O} \right\rangle = \exlara{\psi}{\mathcal{O}}{\psi} $
+Also den Erwartungswert. Die Normierung ist $ \scap{\Psi}{\Psi}$.
+$\scap{\phi}{\psi}$ stellt die Wahrscheinlichkeit des Übergangs von 
+$\ket{\psi}$ nach $\ket{\phi}$ dar.
+Die Quantenmechanik ist des Weiteren eine Einteilchentheorie, es gilt also:
+%
+\begin{equation*}
+	\left[ x,p \right] = \i \hbar = \i
+\end{equation*}
+%
+Die Vielteilchentheorie beschäftigt sich unter anderem mit gemischten 
+Zuständen. Dafür wird der \definition{Dichteoperator} verwendet.
+Zum Beispiel: 
+%
+\begin{equation*}
+	\varrho = \sum_i{W_i \ket{\psi_i} \bra{\psi_i}}
+\end{equation*} 
+%
+Wenn es sich um diskrete Zustände handelt. Für kontinuierliche erhält man:
+%
+\begin{equation*}
+	\varrho = \int{dp\ g(p) \ket{p} \bra{p}}
+\end{equation*}
+%
+Dabei geben $W_i$ und $g(p) $ die Wahrscheinlichkeit an,

@@ -1,0 +1,279 @@
+\chapter{Theoretische Grundlagen von Streureaktionen}
+
+Ziel: Bild \\
+\begin{itemize}
+\item $1+2 \to 1' + ... + n'$ über Wechselwirkung (Ww). 
+\item Quantenmechanische Beschreibung 
+\item Definition des Wirkungsquerschnitts (Wq)
+\end{itemize}
+
+\section{Impulsoperator, Teilchenzustände}
+
+Translationsinvarianz $\rightarrow$ erhaltene Größe "'Impuls" $\rightarrow$ 
+Impulsoperator $\hat p$. \\
+Die Translation wird durch erzeugt durch:
+\[ T(a) = \mathrm e^{-ia \hat p} \]
+d.h. 
+\[ T(dx) \ket{x} = \ket{x+dx} \]
+Für 1 Teilchen gilt mit Quantenmechanik in 3 Dimensionen: 3er Impuls, Operator 
+$\hat p$, Eigenzustand $\ket{\vec{p}}$ und die Norm 
+\[ \braket{\vec{p}}{\vec{p'}} = \delta^{(3)} \left( \vec{p} - \vec{p'} \right) 
+\]
+\\
+\textbf{Relativistisch, viele Teilchentypen:}\\
+\begin{itemize}
+\item 4er Impuls Operator $p^{\mu}$ 
+mit $p^{\mu} =$ Hamiltonoperator = Energie, \\
+$\vec{p} :=$ räumlicher Impuls und \\
+$p^0, \vec{p} :=$ Gesamtenergie/Impuls aller Teilchen
+\item das Teilchensystem A,B,C,... wird charakterisiert durch: \begin{itemize}
+\item Spin $S_{A,B,C,...}$ (hier nicht weiter definiert)
+\item Ruhemasse m$_{A,B,C}$
+\end{itemize}
+\item Impuls-Eigenzustand für Teilchen $\ket{A,p}$ sind durch 
+\[ p^{\mu} \ket{A,p} = \hat{p}^{\mu} \ket{A,p} \] und 
+\[ p^2 = m_A^2 \to p^0 = \sqrt{\vec{p}^2 + m_a^2} := E_A(\vec{(p)} \] 
+festgelegt.
+\end{itemize}
+\textbf{Normierung (relativ):} \\
+\[ \braket{A,p}{A,p'}  \coloneqq  (2 \pi)^3 2 p^0 
+\delta^{(3)}(\vec{p}-\vec{p'})\, \delta_{A,A'} mit p^0 =E_A(\vec{p}) \] \\ 
+Der Grund hierfür ist die lorentzinvarianz: \[N(p,p') \coloneqq E_A(\vec{p}) 
+\delta^{(3})(\vec{p}-\vec{p'}) \, \Rightarrow N(\Lambda p,\Lambda p') = N(p,p') 
+\] 
+Für die Wellenfunktion der Teilchenart $A$ mit dem Impuls $p$ schreibt man: 
+$\ket{A,p}$ \\
+Für einen nicht wohl-definierten Impuls folgt für das Wellenpaket: \\
+\[\ket{A,f} = \int d \tilde{p} \ket{A,p} \braket{A,p}{A,f}\] \\
+hierbei wurde die Vollständigkeit verwendet: 
+\[\int d \tilde{p} \ket{A,p} \bra{A,p} = 1 \] 
+mit \\
+\[d \tilde{p} = \frac{d^3 p}{(2 \pi)^3 2 E(\vec{p})} \; \; \text{Maß} \left(= 
+\frac{d^4 p}{(2 \pi)^3} \delta(p^2-m_A^2) \right)\] \\
+Verteilung: $ \braket{A,p}{A,f} = f_A(\vec{p})$ mit $\ket{A,f} = \int d 
+\tilde{p} f_A (\vec{p}) \ket{A,p}$ \\
+Es gilt die Normierung: $\braket{A,f}{A,f}=1$ \\ \\
+
+$\Rightarrow$ lokalisiert in Impuls mit Unschärfe, parametrisiert durch 
+$f(\vec{p})$ \\
+($f(\vec{p})$ ist für Teilchen, die nicht alle den gleichen Impuls haben, eine 
+Wahrscheinlichkeitsverteilung.)
+
+\section{S,T-Matrix}
+
+Streuung (wildes Bild hier) \\
+\textbf{Vorraussetzung:}
+
+\begin{itemize}
+\item falls Teilchen weit entfernt $\rightarrow$ WW vernachlässigbar
+\item einlaufender Zustand präpariert bei $ t \rightarrow -\infty$
+\item $\ket{i} = \ket{(A_1,p_1)(A_2,p_2)}$ zwei entfernte quasi-freie Teilchen 
+(auch für $m \rightarrow n$ Streuung), $i \mathrel{\hat=}$ \glqq in $\!$\grqq
+\end{itemize}
+\textbf{Frage:} Wahrscheinlichkeitsamplitude dafür, bei $t \to \infty$ den 
+Zustand $\ket{f}=\ket{p'_1 \dots p'_n}$ zu messen  \\
+$S_{fi} \coloneqq \brazket{f}{S}{i} \rightarrow$ wichtige Größe, folgt aus 
+Rechnung in QM/QFT\\
+$S_{fi}$ ist die sogenannte S-Matrix ("'Scattering-Matrix"') \\ \\
+
+4er-Impuls-Erhaltung $\Rightarrow$ Einführung der T-Matrix: 
+
+\[ S_{fi} = \delta_{fi} + i (2\pi)^4 \delta^{(4)}\underbrace{(\sum_i p_i - 
+\sum_f p'_f )}_{\tiny{\begin{matrix}\textit{Impulserhaltung aus} \\ 
+\textit{Translationsinvarianz}\end{matrix}} } T_{fi} \] \\
+$ \longrightarrow \delta_{fi}=0$ für $\ket{i} \neq \ket{f}$, beschreibt den 
+Fall ohne Streuung\\
+$ \longrightarrow T_{fi}$ beschreibt die nicht-triviale Streuung
+
+\section{Wirkungsquerschnitt}
+
+(hier 3 wilde Bilder) \\ \\
+\textbf{einfache Definition des Wirkungsquerschnitts} $\sigma$ (WQ) \\
+\\
+$\frac{d \sigma}{d \Omega} = \frac{N \textit{Streuung (in } d\Omega 
+\textit{)}/t}{n/t} d \Omega$ mit $m= \frac{\textit{Teilchen}}{\textit{Fläche}}$ 
+für den einlaufenden Strahl. (2. dimensionale Verteilung) \\
+\\
+n$= \varrho_A l_A \varrho_B l_B A_{eff}$ mit: \begin{itemize}
+\item $\varrho_{A,B}: $Teilchendichten in Strahl A,B
+\item $l_{A,B}: $ Länge des Strahl A,B
+\item $A_{eff}: $ effektive Fläche (Überlapp der beiden Strahlen)
+\end{itemize}
+weitere Annahmen: \begin{itemize}
+\item $N_{Str}/t =$ konstant
+\item $n/t =$ konstant
+\end{itemize}
+$\Rightarrow \sigma = \frac{N_{Streu}}{n} \to$ \framebox{$ N_{Streu} = \sigma 
+\cdot n $} \\
+\\
+Frage: kann $\sigma$ strahlunabhängig berechnet werden?\\
+Antwort: ja, unter bestimmten Annahmen \\
+\\
+\textbf{jetzt: Quantenmechanische Beschreibung}\\
+Strahl 1: statistisches Ensemble von Teilchen A. Diese sind durch je ein 
+Wellenpaket beschrieben. Gleiches gilt für Strahl 2. \\
+jetzt: statistische Verteilung in xy-Ebene. \\
+$\mu_1(\vec{x_1}), \mu_2(\vec{x_2})$, mit $\mu_{1,2}: $ 
+Wahrscheinlichkeit/Fläche. \\
+\begin{center}
+es gilt: \framebox{$N_i \mu_i = \varrho_i l_i$} \\
+\end{center}
+Annahme: \begin{itemize}
+\item alle Teilchen in Strahl 1/2 streuen unabhängig voneinander
+\item es findet keine Mehrfachstreuung statt
+\end{itemize}
+dann gilt: Anfangszustand des Systems wird durch die Dichtematrix beschrieben: 
+\\
+\[ \int d\vec{x_1} d\vec{x_2} \mu_1(\vec{x_1} \mu_2(\vec{x_2} 
+\ket{i_{\vec{x_1},\vec{x_2}}} \bra{i_{\vec{x_1},\vec{x_2}}}\] \\
+hier steht $\ket{i_{\vec{x_1}}}$ für das Wellenpaket, welches um $\vec{x_1}$ 
+bzw. $\vec{x_2}$ zentriert ist. \\
+Für die zentrierten Wellenpakte gilt: 
+\begin{align*}
+\vec{x_1}: \ket{i_{\vec{x_1}}} = \int d\tilde{p}\, f(p) \mathrm{e}^{-i\vec{p} 
+\vec{x_1}} \ket{p} \\
+\vec{x_2}: \ket{i_{\vec{x_2}}} = \int d\tilde{q}\, g(q) \mathrm{e}^{-i\vec{q} 
+\vec{x_2}} \ket{q}
+\end{align*}
+wobei \begin{align*}
+\vec{x_1}: \ket{i_{\vec{x_1}}} = \int d\tilde{p}\, f(p) \ket{p} \textit{um 0}\\
+\vec{x_2}: \ket{i_{\vec{x_2}}} = \int d\tilde{q}\, g(q) \ket{q} \textit{um 
+$\vec{x}$}
+\end{align*} zentriert ist. \\
+\[\Rightarrow \ket{i_{\vec{x_1},\vec{x_2}}} = \int d\tilde{p} d\tilde{q} f(p) 
+g(q) \mathrm{e}^{-i\left(\vec{p} \vec{x_1} + \vec{q} \vec{x_2} \right)} \ket{p 
+q} \]
+Für $\bra{i_{\vec{x_1},\vec{x_2}}}$ gilt dies analog. $\mathrm{e}^{-i[...]} \to 
+\mathrm{e}^{i[...]}$ \\
+jetzt: Wahrscheinlichkeit für Streuung in den Endzustand $\ket{p_1, ... , 
+p_n}$\\
+\[W_{if} = {\left| \brazket{f}{s}{i} \right|}^2 = ... = \int d\vec{x_1} 
+d\vec{x_2} \mu_1(\vec{x_1}) \mu_2(\vec{x_2}) 
+\brazket{i_{\vec{x_1},\vec{x_2}}}{s^{\dagger}}{p_1', ... , p_n'} \brazket{p_1', 
+... , p_n'}{s}{i_{\vec{x_1},\vec{x_2}}} \]
+
+Wildes Bild erscheint.\\
+Ein weiterer wichtiger Parameter, den wir nur einführen, ist der 
+Impaktparameter $\vec{b} = \vec{x_1} - \vec{x_2}$. \\
+
+\textbf{Annahme 1:} Nur der Impaktparameter $\vec{b}$ soll relevant sein. \\
+$\Rightarrow$ Translationsinvarianz \\
+Ergebnis: $W_{if} \sim \int d\vec{x_1} \mu_1(\vec{x_1}) 
+\mu_2(\vec{x_2-\vec{b}}) = \mu(\vec{b}) = 
+\frac{\textit{Wahrscheinlichkeit}}{\textit{Fläche}} $ des Impaktparameters 
+$\vec{b}$. \\
+
+\textbf{Annahme 2:} Ww. hat endliche Reichweite, über gesamte Reichweite $\mu 
+(\vec{b}) = \mu (0) = $ konstant. \\
+\[ W_{if} = \mu(0) \int d\vec{p} {\left| f(p) \right|}^2 d\vec{q} {\left| g(q) 
+\right|}^2 A_1 \frac{1}{4p^0 q^0 \Delta V} \]
+mit \[ \Delta V = \left| V_p - V_q \right|, V_{rel} = \frac{\left| \vec{p} 
+\right|}{E}\] 
+aus $E= \gamma m ,\ \vec{p} = \gamma m \vec{v}\ (c=1)$ \\
+mit \[ A = {(2\pi)}^4 \delta^{(4)} \left(p+q - \sum_f p_f) 
+T^{\dagger}_{\bar{p}\bar{q} \to \left\lbrace p_f \right\rbrace} T_{pq \to 
+\left\lbrace p_f \right\rbrace} \right)\] 
+des Weiteren gilt analog: 
+\[ \bra{i_{\vec{x_1} \vec{x_2}}} = \int d\tilde{\bar{p}} d\tilde{\bar{q}} 
+\dotsc \] 
+\textbf{Annahme 3:} Wellenpakete haben gut definierten (=relativ scharfen) 
+Impuls p bzw. q in z-Richtung. $p= \left( p_0, 0, 0, p_z \right), q = \left( 
+q^0, 0, 0, q_z \right)$ \\
+$\Rightarrow$ über gesamtes Wellenpaket sind $\Delta V$ und A $\sim$ konstant. 
+\\
+\[ \int d\tilde{p} p_0 \approx \frac{1}{p_0} \int d\tilde{p} f(p)\ \textit{, 
+analog für q.} \] 
+\[ W_{if} = \frac{\mu(0)}{4 \sqrt{{(p-q)}^2 - m_A^2 m_B^2}} {(2 \pi)}^4 
+\delta^{(4)} (p+q - \sum_f{p_f}) \left| T_{pq \to \left\lbrace p_f 
+\right\rbrace} \right| \]
+mit $m_{A,B}$: Massen der Teilchen in Strahl 1,2 \\
+$\Rightarrow$ Ergebnis: 
+\begin{itemize}
+\item Strahlabhängige Größe $\mu(0)$ 
+\item Strahlunabhängige, in Theorie berechnete Größe 
+\end{itemize} 
+Analog im Impulsraum existieren f Endzustände $d\tilde{p_1}' \dotsc 
+d\tilde{p_n}' \ket{p_1' \dotsc {p_n}'} \bra{p_1' \dotsc p_n'}$ \\
+\\
+\textbf{Wildes Bild erscheint}\\
+\\
+$\rightarrow d\sigma (p_1' \dotsc p_n') = \frac{{\left| T_{pq \to p_1' \dotsc 
+p_n'} \right| }^2 }{\sqrt{4 {(p-q)}^2 - m_A^2 m_B^2}} \underbrace{{(2 \pi)}^4 
+\delta^{(4)} (p+q - \sum_f{p_f}) d\tilde{p_1}' \dotsc d\tilde{p_n}'}_{=d\Phi_n 
+:= \textit{Phasenraum}} $ \\
+\\
+$\Rightarrow dN_{Streuung} = N_{Strahl1} \cdot N_{Strahl2} \cdot \mu(0) 
+d\sigma$ \\
+\\
+Es wird nun die Definition des Wechselwirkungsquerschnitts sowie die Formel von 
+d$\sigma$ verbunden. \\
+\begin{align*}
+N_{Streu} \left[ d\Omega \right] &= W_{if} \left[ d\Omega \right] N_1^{A_{eff}} 
+N_2^{A_{eff}} = \mu\left( 0 \right) d\sigma N_1^{A_{eff}} N_2^{A_{eff}} \\
+&= d\sigma \underbrace{\int_{A_eff} d\vec{x_1} \mu_1 \left( \vec{x_1} \right) 
+\left( \vec{x_2} \right) N_1^{A_{eff}} N_2^{A_{eff}}}_{\# Teilchen/Fläche}
+\end{align*}
+mit \[ \mu_1 = \mu_2 =\ \mathit{konstant} \] 
+und
+\[ N_{Streu} \left[ d\sigma \right] = d\sigma \cdot n \hspace{1cm} d\sigma 
+\coloneqq \mathit{ganzes\ Winkelelement} \]
+Daraus folgt: \[ N_{Streu} = \sigma \cdot n \hspace{1cm} \]
+mit \[ n = \frac{\# Teilchen}{Fläche} \]
+
+\section{Ergebnisse für 2 $\to$ 2}
+
+\textbf{Streuung:} \\
+\\
+\textbf{(wildes Bild)}\\
+
+\[ d\sigma = \frac{|T_{if}|^2}{s \sqrt{(p_1 p_2)^2-m_1^2 m_2^2}} d \Phi_2, 
+\quad   d \Phi_2 = (2 \pi)^4 \delta^{(4)}(p_1+p_2-p'_1-p'_2) d \tilde{p}'_1 d 
+\tilde{p}'_2 \]
+Ein typisches System ist das Schwerpunktsystem, für das gilt:
+\[ \sum_i \vec{p_i} = 0 \]
+\[ p_1+p_2 = \underbrace{(\sqrt{S}, \vec{0})}_Q \] 
+mit $\sqrt{S}$ als Energie im Schwerpunktsystem \\
+nach Berechnungen auf dem Übungsblatt 1: 
+\[ d \sigma = \frac{|T_{if}|^2}{2 \sqrt{\lambda_i}} \frac{1}{4 (2 \pi)^2} 
+\frac{\sqrt{\lambda_f}}{2s} d \Omega_1 \]
+für $2 \rightarrow 2$ Streuung \\
+\[ \lambda(a,b,c) \coloneqq a^2+b^2+c^2-2ab-2ac-2bc \]
+mit 
+\[ \lambda_i = \lambda(s, m_1^2, m_2^2) \hspace{0.25cm} \textrm{ und } 
+\hspace{0.25cm} \lambda_f = \lambda(s, {m'_1}^2, {m'_2}^2) \]
+$ ^{(*)} d \sigma = \frac{1}{64 \pi^2 s} |T_{if}|^2 \d \Omega_1 
+\frac{\sqrt{\lambda_f}}{\sqrt{\lambda_i}} \quad $  impliziert, dass 
+\hspace{1cm}  \parbox{3cm}{ \vspace{2em} $p'_2= p_1+ p_2 -p'_1$ \\ 
+$|\vec{p'_1}|=|\vec{p'_2}|= \frac{\sqrt{\lambda_f}}{2 \sqrt{s}}$} \\
+
+\textbf{Sonderfall:} $m_1 = m_2 = m_1' = m_2'$, $\lambda_f = \lambda_i$ 
+Daraus folgt:
+\[ \frac{d\sigma}{d\Omega} = \frac{1}{64 \pi^2 s} {\left| T_{fi} \right|}^2 \]
+\textbf{Anmerkungen:} $d\sigma \sim \sqrt{\lambda_f}$. \\
+z.B.: \begin{itemize}
+	\item $m_1' = m_2' = 0 \Rightarrow s^2$ \\
+	$\left| p_1' \right| = \left| p_2' \right| = \frac{\sqrt{s}}{2} \rightarrow 
+	\textit{Maximum} $
+	\item $m_1' + m_2' \approx \sqrt{s} \rightarrow \left| \vec{p_1}' \right| 
+	\approx \left| \vec{p_2}' \right| \approx 0$ \\
+	an dieser "'Schwelle"' werden die Teilchen quasi in Ruhe erzeugt
+\end{itemize}
+Im Allgemeinen gilt: Wenn $m_1 + m_2$ größer werden, wird $\left| \vec{p_1}' 
+\right|$ kleiner bei gleichen s. \\
+\\
+\textbf{Einheiten:} 
+\[ \left[ d\sigma \right] = \mathit{Fläche} \sim \frac{1}{{\left[ E \right]}^2} 
+\]
+Für 2 $\to$ 2 folgt aus $ ^{(*)}$, dass $T_{fi}$ dimensionslos ist. \\
+\\
+Wir betrachten $ ^{(*)}$ im Schwerpunktsystem (oder allgemein). $\vec{p_{1,2}}$ 
+liegt fest. \\
+$d\tilde{p_1}', d\tilde{p_2}' \to$ 2x3 Variablen und aus $\delta^{(4)}$ folgt, 
+dass es 4 Bedingungen sind. \\
+Es ergeben sich: \\
+$6-4 =2 $ Freiheitsgrade und daraus $d\Omega \to$ Winkelverteilungen \\
+\\
+z.B.: 
+\[ \sqrt{s} >>\underbrace{ m_1, m_2, m_1', m_2'}_{\approx 0} \Rightarrow 
+\frac{d\sigma}{d\Omega} \sim \frac{1}{s}\] (ist der Hochenergielimes [z.B. für 
+t= konstant])

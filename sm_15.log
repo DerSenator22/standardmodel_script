@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.8.9)  29 NOV 2015 22:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.8.9)  20 JAN 2016 00:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1597,52 +1597,52 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
- (./sm_15.aux)
+ (./sm_15.aux (./chapter/chap1.aux))
 \openout1 = `sm_15.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 49.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 47.
-LaTeX Font Info:    Try loading font information for LS1+stix on input line 47.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 49.
+LaTeX Font Info:    Try loading font information for LS1+stix on input line 49.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/stix/ls1stix.fd
 File: ls1stix.fd 2012/12/23 v1.1.0-latex STIX LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 47.
-LaTeX Font Info:    Try loading font information for LS2+stix on input line 47.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 49.
+LaTeX Font Info:    Try loading font information for LS2+stix on input line 49.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/stix/ls2stix.fd
 File: ls2stix.fd 2012/12/23 v1.1.0-latex STIX LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Try loading font information for T1+stix on input line 47.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Try loading font information for T1+stix on input line 49.
 
 (/usr/share/texlive/texmf-dist/tex/latex/stix/t1stix.fd
 File: t1stix.fd 2012/12/23 v1.1.0-latex STIX T1 font definitions
 )
-LaTeX Info: Redefining \microtypecontext on input line 47.
+LaTeX Info: Redefining \microtypecontext on input line 49.
 
 
 Package microtype Warning: `draft' option active.
@@ -1725,7 +1725,7 @@ File: siunitx-abbreviations.cfg 2014/10/01 v2.6c siunitx: Abbreviated units
 
 Package hyperref Warning: Draft mode on.
 
-Package hyperref Info: Link coloring OFF on input line 47.
+Package hyperref Info: Link coloring OFF on input line 49.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1734,52 +1734,52 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count285
 )
-LaTeX Info: Redefining \ref on input line 47.
-LaTeX Info: Redefining \pageref on input line 47.
-LaTeX Info: Redefining \nameref on input line 47.
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \nameref on input line 49.
 \c__siunitx_mathsf_int=\count286
 LaTeX Font Info:    Try loading font information for LS1+stixscr on input line 
-47.
+49.
 
 (/usr/share/texlive/texmf-dist/tex/latex/stix/ls1stixscr.fd
 File: ls1stixscr.fd 2012/12/23 v1.1.0-latex STIX script LS1 font definitions
 )
 LaTeX Font Info:    Try loading font information for LS2+stixex on input line 4
-7.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/stix/ls2stixex.fd
 File: ls2stixex.fd 2012/12/23 v1.1.0-latex STIX extentions LS2 font definitions
 
 )
 LaTeX Font Info:    Try loading font information for LS1+stixfrak on input line
- 47.
+ 49.
 
 (/usr/share/texlive/texmf-dist/tex/latex/stix/ls1stixfrak.fd
 File: ls1stixfrak.fd 2012/12/23 v1.1.0-latex STIX fraktur LS1 font definitions
 )
 LaTeX Font Info:    Try loading font information for LS1+stixbb on input line 4
-7.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/stix/ls1stixbb.fd
 File: ls1stixbb.fd 2012/12/23 v1.1.0-latex STIX blackboard LS1 font definitions
 
 )
 LaTeX Font Info:    Try loading font information for LS2+stixcal on input line 
-47.
+49.
 
 (/usr/share/texlive/texmf-dist/tex/latex/stix/ls2stixcal.fd
 File: ls2stixcal.fd 2012/12/23 v1.1.0-latex STIX calligraphic LS2 font definiti
 ons
 )
 LaTeX Font Info:    Try loading font information for LS1+stixsf on input line 4
-7.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/stix/ls1stixsf.fd
 File: ls1stixsf.fd 2012/12/23 v1.1.0-latex STIX sans-serif LS1 font definitions
 
 )
 LaTeX Font Info:    Try loading font information for LS2+stixtt on input line 4
-7.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/stix/ls2stixtt.fd
 File: ls2stixtt.fd 2012/12/23 v1.1.0-latex STIX typewriter LS2 font definitions
@@ -1819,23 +1819,23 @@ File: ls2stixtt.fd 2012/12/23 v1.1.0-latex STIX typewriter LS2 font definitions
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `T1/stix/bx/n' in size <32> not available
-(Font)              Font shape `T1/stix/b/n' tried instead on input line 56.
+(Font)              Font shape `T1/stix/b/n' tried instead on input line 58.
 
 
-LaTeX Warning: File `Titelbild.jpg' not found on input line 62.
+LaTeX Warning: File `Titelbild.jpg' not found on input line 64.
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 62.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 64.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 71.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 71.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 71.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 71.
  [1
 
 
@@ -1843,67 +1843,139 @@ Package babel Info: Redefining ngerman shorthand "~
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 82.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 82.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 82.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 82.
  [2]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 83.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 85.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/stix/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/stix/b/n' tried instead on input line 83.
-Package tocbasic Info: character protrusion at toc deactivated on input line 83
+(Font)              Font shape `T1/stix/b/n' tried instead on input line 85.
+Package tocbasic Info: character protrusion at toc deactivated on input line 85
 .
  (./sm_15.toc)
 \tf@toc=\write4
 \openout4 = `sm_15.toc'.
 
 LaTeX Font Info:    Font shape `T1/stix/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/stix/m/it' tried instead on input line 91.
+(Font)              Font shape `T1/stix/m/it' tried instead on input line 87.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 91.
+(babel)             in language  on input line 87.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 91.
+(babel)             in language  on input line 87.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 91.
+(babel)             in language  on input line 87.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 91.
+(babel)             in language  on input line 87.
  [3
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
+\openout2 = `chapter/chap1.aux'.
 
-(./sm_15.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 91.
+
+(./chapter/chap1.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [4
+
+
+
+]
+Kapitel 1.
+LaTeX Font Info:    Font shape `T1/stix/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/stix/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/stix/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/stix/b/n' tried instead on input line 15.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 72.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 72.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 72.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 72.
+[5]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 166.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 166.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 166.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 166.
+ [6]
+Overfull \hbox (0.46693pt too wide) in paragraph at lines 183--191
+\T1/stix/m/n/10.95 Für die Elek-tro-dy-na-mik be-trach-ten wir die ko-va-ri-an-
+te \T1/stix/m/sc/10.95 Max-well\T1/stix/m/n/10.95 -Gleichung mit dem \T1/stix/b
+/n/10.95 4-Potential|
+ []
+
+LaTeX Font Info:    Font shape `T1/stix/bx/sc' in size <10.95> not available
+(Font)              Font shape `T1/stix/b/sc' tried instead on input line 195.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 229.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 229.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 229.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 229.
+[7])
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 87.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 87.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 87.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 87.
+ [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
+ (./sm_15.aux (./chapter/chap1.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 93.
  ) 
 Here is how much of TeX's memory you used:
- 32928 strings out of 493105
- 635932 string characters out of 6137073
- 717549 words of memory out of 5000000
- 35884 multiletter control sequences out of 15000+600000
- 53449 words of font info for 66 fonts, out of 8000000 for 9000
+ 32995 strings out of 493105
+ 637221 string characters out of 6137073
+ 724951 words of memory out of 5000000
+ 35939 multiletter control sequences out of 15000+600000
+ 88161 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,10n,65p,10464b,899s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}{/usr/share/t
-exmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fo
+ 64i,16n,65p,10464b,899s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}</usr/share/texlive/texmf-dist/fo
 nts/type1/public/stix/STIXGeneral-Bold.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/stix/STIXGeneral-Italic.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/stix/STIXGeneral-Regular.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sftt1095.pfb>
-Output written on sm_15.pdf (3 pages, 123067 bytes).
+cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/stix/stix-mathbb.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/stix/stix-mathrm.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/stix/stix-mathscr.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/stix/stix-mathsf.pfb>
+Output written on sm_15.pdf (8 pages, 202400 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

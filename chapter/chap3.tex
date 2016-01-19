@@ -1,0 +1,367 @@
+\chapter{Einfache Ergebnisse für Streuamplituden}
+
+Wir betrachten nun die Quantenmechanische Beschreibung für das einige 
+Potentiale(z.B. das Coulombpotential). \\
+Außerdem betrachten wir s- und t- Kanal Prozesse sowie Resonanzen und 
+Breitwiger.  
+
+\section{Streuung in 1 Teilchen QM in 1. Ordnung}
+
+Zu erst beschreiben wir die Streuung eines Teilchens an einen vorgegebenen 
+Potential. \\
+\textbf{Bild} \\
+Beschreibung: \[ H= H_{kin, Teilchenfrei} + V \\
+= H_0 + V  \]
+Dabei beschreibt V eine kleine Streuung (diese ist hier zeitlich konstant). \\
+\\
+\textbf{Annahmen/Definitionen:} $t \longrightarrow - \infty:$ Zustand 
+$\ket{\phi(t)} \sim \ket{\vec{p_i}}$ als Impuls-Eigenzustand\\
+\textbf{Frage:} Welche Amplitude braucht man, so dass für $t \longrightarrow 
+\infty: \ket{\vec{p_f}}$ gemessen wird. \\
+$S_{fi} \coloneqq \sim \lim_{t\to \infty} \braket{\vec{p_f}}{\phi(t)} 
+\longrightarrow$ Es ist wichtig, dass jetzt die Zeitentwicklung $\ket{\phi(t)}$ 
+\\
+\\
+Dazu betrachten wir nun nochmal verschiedene Bilder der Quantenmechanik: \\
+Wir wissen noch: $\partial_t \brazket{\psi}{\mathcal{O}}{\psi} = 
+\brazket{\psi}{ \left[ \mathcal{O},H \right] }{\psi}$
+\begin{itemize}
+	\item Schrödinger-Bild: $\ket{A,t}_s = \mathrm{e}^{-iHt} \left. 
+	\ket{A,t_0}_s \right|_{t_0 = 0}$
+	$\mathcal{O}_(t) = \mathcal{O}(t=0) = \mathit{konstant}$ ; $i\partial_t 
+	\ket{A,t}_s = H \ket{A,t}_s$
+	\item Heisenberg-Bild: $\ket{A,t}_H = \ket{A,t_0}_H = \mathit{konstant}$ \\
+	$i\partial_t \mathcal{O}^H(t) = \left[ \mathcal{O}(t), H \right] ; 
+	\mathcal{O}^H(t) = \mathrm{e}^{iHt} \mathcal{O}^s \mathrm{e}^{-iHt} $
+	\item Wechselwirkungsbild Bild: $H=H_0 + H_W$ \\
+	$i\partial_t \ket{A,t}_W = H_W \ket{A,t}_W $ \\
+	$i\partial_t \mathcal{O}^W (t) = \left[ \mathcal{O}^W (t), H_0 \right]$ 
+	\item es gilt des Weiteren zu beachten, dass $\partial_t 
+	\brazket{\psi}{\mathcal{O}}{\psi}$ in allen Bildern identisch ist.
+\end{itemize}
+
+Wir betrachten jetzt \[ \ket{\psi(t)}, t \to \infty, \hspace{0,5cm} \ket{\psi 
+(t\to - \infty)} = \ket{\vec{p_i}} \]
+\[ S_{fi} = \braket{\vec{p_f}}{\psi (t \to \infty)} \hspace{0,5cm} \mathit{mit} 
+H_W = \mathcal{O}.\] Dabei ist $\mathcal{O}$ der Operator. \\
+\[ i \partial_t\ket{\psi_{ww}(t)} = V_{ww} (t) \ket{\psi_{ww}(t)} \]
+\[ \longrightarrow \ket{\psi_{ww}(t)} =\left[ \mathrm{e}^{-i \int_{t_i}^{t} dt' 
+V_{ww}(t)} \right] \cdot \ket{\psi_{ww}(t_i)} \]
+Wir treffen nun die Annahme, dass $\mathcal{O}$ klein ist (Störungstheorie).\\
+Mit der Taylorentwicklung folgt: 
+\[ \ket{\psi_{ww}(-\infty)} - \left[ i \int_{-\infty}^{t} V_{ww}(t') dt' 
+\right] \underbrace{\ket{\psi_{I}(-\infty)}}_{\ket{\vec{p_i}}} + ...\]
+
+Durch einsetzen folgt: \[ S_{fi} = \braket{\vec{p_f}}{\vec{p_i}} - 2 
+\int_{-\infty}^{\infty} dt' \brazket{\vec{p_f}}{\mathcal{O}}{\vec{p_i}} 
+\mathrm{e}^{iE_ft' - iE_it'} + ...\] \\
+Dabei wurde \[ V_{ww}(t) = \mathrm{e}^{iHt} V_s \mathrm{e}^{-iHt} \] mit $ V_s 
+= \mathit{konst.} $ verwendet. \\
+\[ S_{fi} = \delta_{fi} + i T_{fi} 2 \pi \delta \left( E_f - E_i \right) \] mit 
+\[ T_{fi} = -i \brazket{\vec{p_f}}{V}{\vec{p_i}} \]
+\\
+\textbf{Zur Erinnerung:} in der 1 Teilchen Quantenmechanik gilt: 
+\begin{itemize}
+	\item[] $\ket{x} = \int \frac{d^3q}{{(2\pi)}^{3/2}} \mathrm{e}^{iqx} 
+	\ket{q} $
+	\item[] $\ket{q} = \int \frac{d^3x}{{(2\pi)}^{3/2}} \mathrm{e}^{-iqx} 
+	\ket{x} $
+\end{itemize}
+\[ \braket{q}{q'} = \delta^{(3)} \left( \vec{q} - \vec{q'} \right) ; 
+\braket{x}{x'} = \delta^{(3)} \left( \vec{x} - \vec{x'} \right) \]
+\[ \brazket{\vec{p_f}}{V}{\vec{p_i}} = \frac{1}{{2\pi}^3} \int d^3x d^3x' 
+\brazket{\vec{x}}{V}{\vec{x'}} \mathrm{e}^{-i\vec{p_i}\vec{x}} 
+\mathrm{e}^{i\vec{p_f}\vec{x'}} \] \\
+Wr betrachten jetzt V nur "'lokal"', also nur von x abhängig: \[ 
+\brazket{\vec{x}}{V}{\vec{x'}} = V \left( \vec{x} \right) \delta^{(3)} \left( 
+\vec{x} - \vec{x'} \right) \]
+\[ \Longrightarrow \brazket{\vec{p_f}}{V}{\vec{p_i}} = \frac{1}{{2\pi}^3} 
+\underbrace{\int d^3x  V \left( \vec{x} \right) \mathrm{e}^{-i \left( \vec{p_i} 
+- \vec{p_f} \right) \vec{x}} }_{\sim V\left( \vec{q} \right) 
+\mathit{Fouriertransformierte}} \]
+Dabei ist \[ \vec{q} = \vec{p_f} - \vec{p_i} \]
+\[ \Longrightarrow i T_{fi} = - \frac{1}{({2\pi})^3} \tilde{V}\left( \vec{q} 
+\right) \]
+
+\section{Ergebnisse für typische Potentiale}
+
+\textbf{Bild} \\
+
+\begin{itemize}
+	\item \textbf{Coulomb-Potential:} \[ V\left( \vec{x} \right) = \frac{Q_1 
+	Q_2}{4\pi \left|\vec{x}\right|} \] 
+	d.h. es gilt: \[ - \Delta V\left( \vec{x} \right) = Q_1 Q_2 \delta^{(3)} 
+	\left( \vec{x} \right) \] 
+	Aus der Fouriertransformation folgt: \[ \vec{q}^2 \tilde{V}\left( \vec{q} 
+	\right) = Q_1 Q_2 \to \tilde{V}\left( \vec{q} \right) = \frac{Q_1 
+	Q_2}{\vec{q}^2} \]
+	\item $\delta$\textbf{-Potential:} \[V \left( \vec{x} \right) = V_0 \delta 
+	(\vec{x}) \Longleftrightarrow \tilde{V}(\vec{q}) = V_0 = \mathit{konstant} 
+	\]
+	\item \textbf{Yukawa-Potential:} \[ \vec{V}(\vec{x}) = \frac{V_0 
+	\mathrm{e}^{-M|\vec{x|}}}{4 \pi |\vec{x}|} \]
+	\vspace{-0,5cm}
+	\begin{align*}
+		\Leftrightarrow \left( -\laplace + M^2 \right) V(\vec{x}) &= V_0 
+		\delta^{(3)} (\vec{x}) \\
+		\Leftrightarrow \left( \vec{q}^2 + M^2 \right) \tilde{V}(\vec{q}) &= 
+		V_0 \\
+	\end{align*}
+	\vspace{-1cm}
+	\[ \Longrightarrow \tilde{V}(\vec{q}) = \frac{V_0}{\vec{q}^2 + M^2} \]
+		 
+	\item \textbf{allgemein für Ladungsverteilungen:} \[ V(\vec{x}) = Q_1 \int 
+	d^3x' \frac{\varrho(\vec{x'})}{4 \pi |\vec{x} - \vec{x'}} \]
+	\begin{align*}
+		\Rightarrow - \laplace V(\vec{x}) = Q_1 \varrho (\vec{x})  \\
+		\Leftrightarrow \vec{q}^2 \tilde{V}(\vec{q}) = Q_1 
+		\tilde{\varrho}(\vec{q})
+	\end{align*}
+	 mit $\tilde{\varrho}$ als Fouriertransformierte von $\varrho$
+	\[ \Longrightarrow \tilde{V}(\vec{q}) = \frac{Q_1 
+	\tilde{\varrho}(\vec{q})}{\vec{q}^2} \]
+\end{itemize}
+
+\textbf{Ergebnisse:} 
+\begin{itemize}
+	\item Coulomb: \hspace{1,3cm} $ i T_{fi} \cong - \frac{iQ_1 Q_2}{\vec{q}^2} 
+	\frac{1}{(2\pi)^3} $
+	\item Yukawa-Potential: $ i T_{fi} \cong - \frac{i V_0}{\vec{q}^2 + M^2} 
+	\frac{1}{(2\pi)^3} $
+	\item $\delta$-Potential: \hspace{1,2cm} $ i T_{fi} \cong - i V_0 
+	\frac{1}{(2\pi)^3} $
+	\item Ladungsverteilung:  $ i T_{fi} \cong - i \frac{Q_1 
+	\tilde{\varrho}(\vec{q})}{\vec{q}} \frac{1}{(2\pi)^3} $
+\end{itemize}
+Ganz allgemein gilt, wenn das Potential 
+\[ \left( -a \laplace + b \right) V(\vec{x}) = f(\vec{x}) \]
+erfüllt, folgt:
+\[ \tilde{V}(\vec{q}) = \frac{1}{a\vec{q}^2 + b} \tilde{f}(\vec{q}) \] 
+\textbf{Fazit:} Wenn $\vec{q}$-Abhängigkeit gemessen wird, erhält man 
+Informationen über V$(\vec{x})$
+
+\section{Verallgemeinerung des relativistischen Falles}
+
+\subsection{Relativistische Situation}
+
+\textit{Im folgenden bezeichnet $x$ den 4-dim. Vektor.}\\
+\\
+In der Quantenmechanik gilt: ein statisches Potential V$(\vec{x})$ wird durch 
+ruhende Ladungsverteilung erzeugt. \\
+In der Quantefeldtheorie (QM + Relativität) gilt: eine Welle (meistens 
+kugelförmig) wird von einer $\delta$-Störung an einem Raumzeitpunkt erzeugt. \\
+z.B.: 
+\begin{itemize}
+	\item Elektrostatik: $-\laplace V(\vec{x}) = Q_1 Q_2 \delta^{(3)} (\vec{x}) 
+	$
+	\item Elektrodynamik: $\Dalembert V(\vec{x}) = Q_1 Q_2 \delta^{(4)} 
+	(\vec{x}) \hspace{0,25cm} \mathit{mit} \hspace{0,25cm}  \Dalembert = \left( 
+	\partial_t^2 - \laplace \right) $
+	\item[] Die Lösung ist eine elektromagnetische Welle mit der Quelle für 
+	$x=0$
+\end{itemize}
+
+Auch hier bilden wir wieder die Relation zwischen $T_{fi}$ und $\int V(x) d^4x$ 
+\\
+\[ iT_{fi} = - \frac{i}{(2\pi)^4} \int d^4x' \mathrm{e}^{iq^{\mu} x_{\mu }} 
+V(x') \]
+mit 
+\[ q^{\mu} = \left( E_f - E:i, \vec{p_f} - \vec{p_i} \right) = p_f^{\mu} - 
+p_i^{\mu} \]
+daraus folgt:
+\[ i T_{fi} = -i \tilde{V}(q) \frac{1}{(2\pi)^4} \] 
+wobei $\tilde{V}(q)$ die 4-dim. Fouriertransformierte von $V(x)$ ist. \\
+Wie schon zuvor gilt: 
+\[ ^{(*)} \left( a \Dalembert + b \right) V(x) = \delta^{(4)} (x) \to \left( 
+-aq^2 + b \right) \tilde{V}(q) = 1 \]
+\[ \Rightarrow \tilde{V}(q) = \frac{1}{-aq^2 + b} \]
+Wenn das Potential $^{(*)}$ gilt: 
+\[ \tilde{V}(q) = \frac{1}{- aq^2 + b} \]
+Für die verschiedenen Fälle folgt: 
+\begin{itemize}
+	\item Coulomb: $\Dalembert V(x) = \delta^{(4)} (x) \Rightarrow$ 
+	\textbf{Bilde}
+	\item Yukawa: $\left( \Dalembert + M^2 \right) V(x) = \delta^{(4)} (x)$ 
+	\textbf{Bild}
+\end{itemize}
+\textbf{Diskussion:} Hier gilt keine t-invarianz und dadurch keine 
+Energieerhaltung \\
+Falls für $V(x) = V(\vec{x})$ gilt, also keine Zeitabhängigkeit vorliegt, ist 
+die Energie erhalten. \\
+Falls $E_f = E_i$ und q klein ist, erhalten wir ein nichtrelativistisches 
+Ergebnis. \\
+Für \[ E_i^2 - \vec{p_i}^2 = E_f^2 - \vec{p_f}^2 = m^2 \]
+dabei ist $ q^2 = (p_f - p_i)^2 $ immer lorentzinvariant. \\
+Wir betrachten dies nun im Bezugssystem, in dem $\vec{p_i} = 0$ (also das 
+Ruhesystem eines einlaufenden Teilchens)
+\begin{align*}
+\Rightarrow q^2 = (\vec{p_f}- \vec{p_i})^2 &= p_f^2 + p_i^2 - 2p_f p_i \\
+&= 2m^2 - 2p_f (m,\vec{0}) \\
+&= 2m^2 . 2 \underbrace{E_f}_{\ge m} m < 0  
+\end{align*}
+Aus der Lorentzinvarianz folgt, dass in jedem System gilt: $q^2 \le 0$. \\
+Außerdem sind die Nenner in $\frac{1}{q^2}, \frac{1}{q^2 - M^2}$ immer $<0$ \\
+\\
+\textbf{Allgemeine Nomenklatur:} 
+\begin{itemize}
+	\item $q^2 <0$: raumartig, man kann immer ein System finden, in dem $q = 
+	\begin{pmatrix}
+	0 \\
+	\vec{q}
+	\end{pmatrix} $
+    \item $q > 0$: zeitartig, man kann immer ein System finden, in dem $q = 
+    \begin{pmatrix}
+    q \\
+    \vec{0}
+    \end{pmatrix} $
+\end{itemize}
+
+\subsection{Aussagen aus der Quantefeldtheorie (ohne Beweis)}
+
+1.) QFT: Für Felder $\Phi(x)$ mit Bewegungsgleichungen, z.B. $\left( \Dalembert 
++ M^2 \right) \Phi(x)= ... $ gilt: \\
+$\rightarrow$ Streuamplitude [Herleitung wie vorher] \\
+\textbf{Bild} \\
+\[ iT_{fi} \sim \frac{i}{q^2 - M^2} \]
+Im Allgemeinen gilt: $q^2 <0$ ist \textbf{explizit} nicht möglich. \\
+Wenn $q^2 = m^2 >0 $ handelt es sich um kein beobachtbares Teilchen. Solch ein 
+Teilchen bezeichnen wir als "'virtuell"'. (Sobald $q^2 \ne m^2$) \\
+\\
+2.) QFT: Falls der Prozess in 1.) möglich ist, folgt: \\
+\textbf{Bild}  
+\[ iT_{fi} \sim \frac{i}{q^2 - M^2} \] 
+Nun ist $q^2$ größer als 0. \\
+Daraus folgt, dass $q^2 = M^2$ möglich ist. Naiv könnte man davon ausgehen, 
+dass $T_{fi} \to \infty$, also ein Pol in der Störungstheorie vorliegt. \\
+\\
+\textbf{Antwort:} Man muss in der quantenmechanischen Störungstheorie höhere 
+Ordnungen mitnehmen. \\
+\textbf{Bildbeispiel}\\
+\\
+\subsection{Resonanzen}
+
+Wir werden die Herleitung zunächst wieder im Rahmen der quantenmechanischen 
+Streuung machen. \\
+\\
+\textbf{elastische Streuung in der Quantenmechanik} \\
+Dies bedeutet, dass $\left| \vec{p} \right| $ gleich bleibt. \\
+Der Wirkungsquerschnitt berechnet sich wie folgt: 
+\[ \frac{d\sigma}{d\Omega} = \frac{\mathit{Teilchen/Zeit}}{\mathit{Fluss\ 
+einlaufender\ Teilchen}} \frac{1}{\mathit{Winkelelement}} \]
+Wir betrachten nun den Zustand mit der Wellenfunktion $\psi$ \\
+Aus der Quantenmechanik (Schrödingergleichung) folgt die 
+Wahrscheinlichkeitsstromdichte:
+\[ \vec{j} \sim \Im{\left[ \psi^* \nabla \psi \right] } \]
+\textbf{Bild} \\
+\\
+\[ \psi_{tot} = \psi_{in} + \psi_{Streu} = \mathrm{e}^{ikz} + \frac{f(\Theta, 
+\phi) \mathrm{e}^{ikr)}}{r} \]
+Wir betrachten dies nun für große r (ohne Beweis): \\
+\[ \frac{d\sigma_{Streu}}{d\Omega} = {\left| f(\Theta \phi) \right|}^2 \]
+Im nächsten Schritt bilden wir die Partialwellenzerlegung von 
+$\mathrm{e}^{ikz}$:
+\[ \psi_i = \mathrm{e}^{ikz} = \frac{i}{2kr} \sum_l (2l + 1) \left[ (-1)^l 
+\mathrm{e}^{-ikr} - \mathrm{e}^{ikr} \right] P_l (\cos{\Theta}) \]
+mit $P_l (\cos{\Theta}) $ als Legendre-Polynome für die Orthogonalität gilt: 
+\[ \int_{-1}^{1} P_l (\cos{\Theta})\, P_{l'} (\cos{\Theta}) d\cos{\Theta} = 
+\frac{2}{2l +1} \delta_{l l'} \] 
+Wir betrachten nun den $\psi_{tot}$-Ansatz, bei dem k konstant ist, es also 
+eine elastische Streuung vorliegt: 
+\[ \psi_{tot} = \frac{i}{2kr} \sum_l (2l +1) \left[ {(-1)}^l \mathrm{e}^{-ikr} 
+- \eta_l \mathrm{e}^{2i\delta_l} \mathrm{e}^{ikr} \right] P_l (\cos{\Theta}) \]
+Dabei parametrisieren $\eta_l$ und $\delta_l$ (Phase) die Streuung. Der erste 
+Summand in [...] beschreibt die einlaufende und der zweite Summand die 
+auslaufende Welle. \\
+Aus 
+\[ \psi_{tot} = \psi_i + \psi_{Streu} \]
+folgt: 
+\[ \psi_{Streu} = \psi_{tot} - \psi_i = \frac{\mathrm{e}^{ikr}}{r} f(\Theta, 
+\phi) \]
+Dabei beschreibt $\psi_i$ das Teilchen in z-Richtung und aus der 
+Partialwellenzerlegung folgt: 
+\[ f(\Theta, \phi) = \frac{1}{k} \sum_l (2l + 1) a_l P_l (\cos{\Theta}) \]
+mit
+\[ a_l = \frac{\eta_l \mathrm{e}^{2i\delta_l} -1 }{2i} \]
+Und daraus folgt schlussendlich (ohne Beweis):
+\[ \frac{d\sigma_{Streu}}{d\Omega} = {\left| f(\Theta) \right|}^2 = r^2 {\left| 
+\psi_{Streu} \right|}^2 \]
+\\
+Bisher haben wir elastische Streuung betrachtet, also $\left| \vec{p} \right| = 
+k = \mathit{konstant}$. \\
+Für unelastische Streuung, also $\left| \vec{p} \right| = k \ne 
+\mathit{konstant}$ ($k \ne k'$ nach der Streuung) folgt aus der 
+Wahrscheinlichkeitserhaltung: 
+\[ \sigma_{unel} = \int \left( {\left| \Psi_{in} \right|}^2 - {\left| 
+\Psi_{out} \right|}^2 \right) r^2 d\Omega \]
+Falls einlaufende und auslaufende Welle gleich sind, folgt:
+\[ \sigma_{unel} = 0 \]
+Die Gesamtwahrscheinlichkeit ergibt sich aus der Summe der elastischen und 
+unelastischen Wahrscheinlichkeit. \\
+Man kann für alle 3 Größen den Maximalwert errechnen. 
+Für die Parameter $\eta_l$ und $\delta_l$ gilt außerdem:
+\[ \eta_l \in [0, l] , \delta_l \in [0, 2\pi] \]
+In der praktischen Anwendung werden die Parameter beschränkt. \\
+\\
+\textbf{Resonanz in quantenmechanischer Streuung:} \\
+Für die Resonanz gilt $\eta_l = 1$, sie ist also komplett elastisch. 
+\[ \sigma_{el} = \frac{4\pi}{k^2} \sum_l (2l +1) \sin{\delta_l}^2 \]
+Die Wahrscheinlichkeit ist für $\sigma_l = \frac{\pi}{2}$ maximal. Das 
+bedeutet, dass diese Amplitude dominant ist.
+\[ a_l \stackrel{\eta_l =1}= \mathrm{e}^{i\delta_l} \sin{\delta_l} = 
+\frac{1}{(\cot \delta_l - i)} \] 
+Wir betrachten nun die allgemeine Streuung: 
+\[ \delta_l = \delta_l (E) \]
+Dabei ist E die Gesamtenergie des Systems. \\ 
+\\
+Wir definieren $E_R$ (Resonanzenergie) über $\delta_l (E_R) \approx 
+\frac{\pi}{2} $ \\
+Dafür entwickeln wir um die Resonanzenergie. \\
+Die Entwicklung vpn $p^2$ um $m^2$ in höheren Ordnungen in der 
+Quantenfeldtheorie wäre etwa: 
+\[ \frac{1}{p^2 - m^2} \]
+Daraus folgt:
+\[ \cot \delta_l (E) = 0 + (E -E_R) \underbrace{\frac{d}{dE} (\cot \delta_l 
+(E))_{E = E_R}}_{-\frac{2}{\Gamma_l}} + ... \]
+Dies definiert uns auch gleich $\Gamma_l$. \\
+Wenn wir die Entwicklung nun einsetzen, erhalten wir: 
+\[ a_l (E) = \frac{1/2 \Gamma_l}{\left[ (E_R -E) - i \Gamma_l /2 \right]} \]
+Daraus folgt: 
+\[ \sigma_{el}^{dominant} (E) = \frac{4\pi}{k^2} (2l + 1) \frac{\Gamma^2 / 
+4}{(E_R - E)^2 + \Gamma^2 / 4} \]
+Dabei ist l das l, für dass $\delta_l = \frac{\pi}{2} $ gilt. \\
+Dies ist die nicht relativistische Breit-Wigner Formel. \\
+\textbf{Bild} \\
+\\
+Für die Lebensdauer gilt: 
+\[ \tau \sim \frac{1}{\Gamma} \]
+mit $\Gamma$ als Zerfallsbreite. \\
+Um diese, für das Experiment, wichtige Größe zu erhalten, benötigt man die 
+Fouriertransformation. 
+\[ \psi_{Streu}^{dom} (E) = \frac{e^{ikr}}{r} \frac{1}{k} (2l +1) \frac{1/2 
+\Gamma}{(E_R -E) - i \Gamma/2} \]
+Fouriertransformation:
+\[ \int_{-\infty}^{\infty} dt \frac{\mathrm{e}^{-iEt}}{E- E_R + i/2 \ \Gamma} 
+\sim \mathrm{e}^{-i (E_R - i/2 \ \Gamma_R) t} \]
+Daraus folgt:
+\[ \left| \psi_{Streu} (t) \right|^2 = \mathrm{e}^{- \frac{\Gamma}{t}} \]
+Dies ist die Herleitung zu $\tau \sim \frac{1}{\Gamma}$ \\
+\\
+Dasselbe kann man analog in der Quantenfeldtheorie machen. \\
+\\
+\textbf{Bild}\\
+\\
+\[ iT_{fi} \sim \frac{i}{p^2 - m^2 + im \Gamma} \]
+\[ \sigma \sim \left| T_{fi} \right|^2 \ , \ \left| T_{fi} \right|^2 \sim 
+\frac{1}{(p^2 -m^2)^2 + m^2 \Gamma^2} \] 
+\textbf{Bild} relativistische Breit-Wigner-Verteilung \\
+\\
+In $\Gamma$ stecken die Informationen über die Theorie. Dadurch sind außerdem 
+Präzisionsmessungen möglich. \\
+\\
+\textbf{Ergebnis aus der Quantenfeldtheorie:} \\
+Für Teilchen x gilt: 
+\[ \Gamma x = \frac{1}{2 m_x} \sum_f \int d\Phi_f |T|^2_{x \to f} \]
+f sind dabei alle möglichen Endzustände und $\Phi_f$ beschreibt den Phasenraum. 
+\\
+\textbf{Bild} \\
+\\

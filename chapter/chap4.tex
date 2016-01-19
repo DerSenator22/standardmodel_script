@@ -1,0 +1,147 @@
+\chapter{Luminosität und Wirkungsquerschnitt im Experiment}
+
+Die Anzahl von gestreuten Teilchen in einem Raumwinkelelement ergibt sich zu:
+\[ dN = N d\Omega = \underbrace{\int d x_1^2 N_1 \mu_1 (\vec{x_1}) N_2 
+(\vec{x_2})}_{\mathit{integrierte\ Luminosität}} d\sigma \]
+Für Teilchenstrahlen mit Teilchenzahlen $N_1, N_2$ und Verteilungsdichten 
+$\mu_1, \mu_2$. \\
+\\
+\textbf{Bild}\\
+\\
+
+\section{Luminosität}
+
+Bei Kreisbeschleunigern wie dem LHC oder dem LEP laufen Teilchen in $n_b$ 
+Paketen, sogenannten bunches, im Kreis. \\
+Dabei werden Umlauffrequenzen von $f = 11245,5\,Hz$ erreicht. $\left( f \approx 
+\frac{c}{26,7\,km} \right) $ \\
+Wir betrachten nun die instantane Luminosität: 
+\[ \mathcal{L} (t) = n_b f \tilde{N_1} \tilde{N_2} \int dx^2 \mu_1(\vec{x_1}) 
+\mu_2(\vec{x_2})  \]
+Mit $ \tilde{N_1},\ \tilde{N_2}$ als die Anzahl der Teilchen pro Paket. \\
+In guter Näherung sind $\mu_1,\ \mu_2$ unabhängig in x- und y-Richtung, d.h. 
+man kann sie faktorisieren. 
+\begin{align*}
+\int d^2x \mu_1(\vec{x_1}) \mu_2(\vec{x_2}) &= \int dx\, dy \mu_1(\vec{x}) 
+\mu_1(\vec{y}) \mu_2(\vec{x}) \mu_2(\vec{y}) \\
+&= \underbrace{\int dx \mu_1(\vec{x}) \mu_2(\vec{x})}_{\Omega_x} 
+\underbrace{\int \mu_1(\vec{y}) \mu_2(\vec{y})}_{\Omega_y}
+\end{align*}  
+Dabei sind $\Omega_x$ und $\Omega_y$ die Überlappintegrale.\\
+Die $\mu_i$ sind normiert:
+\[ \int \mu_i (x) dx = 1 \hspace{0.5cm} \Longrightarrow \hspace{0.5cm} 
+\mathcal{L}(t) = n_b f \tilde{N_1} \tilde{N_2} \Omega_x \Omega_y \]
+
+\section{Van der Meer-Scan}
+
+Der Van der Meer-Scan ist eine Methode zur Bestimmung der Luminosität, die von 
+S. van der Meer entwickelt wurde. \\
+Dafür wird die relative Luminosität bzw. Wechselwirkungsrate für um b$_x$, 
+b$_y$ versetzte Teilchenstrahlen gemessen:
+\[ \mathcal{L}(b_x) = n_b f \tilde{N_1} \tilde{N_2} \int dx \mu_1 (x) \mu_2 
+(x-b) \cdot \Omega_y \]
+Gleiches gilt analog für b$_y$. \\
+\[ \int_{-\infty}^{\infty} db_x \mathcal{L} (b_x) = n_b f \tilde{N_1} 
+\tilde{N_2} \Omega_y \underbrace{\int_{-\infty}^{\infty} db_x 
+\int_{-\infty}^{\infty} \mu_1 (x) \mu_2 \underbrace{(x-b_x)}_{b'} 
+dx}_{\underbrace{\int_{-\infty}^{\infty} db' \int_{-\infty}^{\infty} dx 
+\mu_1(x) \mu_2(b')}_{1}} \]
+Daraus folgt: 
+\[ \int_{-\infty}^{\infty} db_x \mathcal{L}(b_x) = n_b f \tilde{N_1} 
+\tilde{N_2} \Omega_y \]
+Die linke Seite der Gleichung ist als Integral der Wechselwirkungsrate messbar. 
+Die rechte wird mit dem Strahlstrom gemessen. \\
+Hieraus lässt sich dann $\Omega_y$ und analog auch $\Omega_x$ bestimmen. \\
+Dabei muss $\mathcal{L}(t)$ nicht absolut bestimmt werden, sondern nur relativ. 
+\[ \Omega_x = \frac{\mathcal{L} (b_x = 0)}{\int db_x \mathcal{L}(b_x)} \]
+\\
+Wir definieren nun $\Sigma_{x,y}$:
+\[ \Sigma_{x,y} = \frac{1}{\sqrt{2 \pi}} \frac{1}{\Omega_{x,y}} \]
+dann:
+\[ \mathcal{L} (t) = \frac{n_b f \tilde{N_1} \tilde{N_2}}{2 \pi \Sigma_x 
+\Sigma_y} \]
+Für gaußförmige Strahlprofile ist
+\[ \mathcal{L} (b_x) = c \cdot \mathrm{e}^{- \frac{b_x^2}{2 \sigma_x^2}} \] 
+Daraus folgt: 
+\[ \Sigma_x = \frac{1}{\sqrt{2 \pi}} \frac{\int_{\infty}^{\infty}db 
+\mathcal{L}(b)}{\mathcal{L}(0)} = \sigma_x \]
+\textbf{Beispiel LHC:} 
+\[ \Sigma_{x,y} \approx 60\,\mu m \]
+beim Scan: 
+\begin{align*}
+\tilde{N}_{1/2} &\approx 10^{10}\, \mathit{Protonen} \\
+n_b &\approx 1
+\end{align*}
+Für die Luminosität beim Scan gilt dann:
+\[ \mathcal{L}_{Scan} (t) = \frac{f n_b \tilde{N_1} \tilde{N_2}}{2 \pi (60\,\mu 
+m )^2} = 4,9 \cdot 10^{29}\,cm^{-2} s^{-1} \]
+Nominell beim LHC:
+\[ \tilde{N_{1/2}} = 10^{11},\ n_b \approx 2800 \]
+\[ \Longrightarrow \mathcal{L}_{LHC} (t) \approx 10^{34} cm^{-2} s^{-1} \]
+Daraus ergibt sich eine totale Luminosität pro Jahr von:
+\[ 1\,a \approx \pi \cdot 10^7\,s \]
+Die Betriebszeit beträgt:
+\[ t \approx \frac{1\,a}{\pi} = 10^7\,s \]
+\[ \mathcal{L}_{int} \approx 10^{41}\,cm^{-2} \]
+\\
+Die Einheit des Wirkungsquerschnittes ist:
+\[ [\sigma] = 1\,\mathit{barn} = 10^{-24}\,cm^{2} = 100\, fm^2 \]
+Für seltene Prozesse mit $\sigma = 1\,fb$ beträgt die Anzahl an Ereignissen:
+\[ N = \mathcal{L}_{int} \cdot \sigma \approx 100 \]
+Bei einer Genauigkeit von:
+\[ \frac{\Delta \mathcal{L}}{\mathcal{L}} \approx 2-5\% \]
+
+\section{Luminositätsmessung durch Referenzwirkungsquerschnitt}
+
+\[ N = \sigma \cdot \mathcal{L}_{int}  \]
+N ist die Anzahl der Ereignisse, $\mathcal{L}_{int}$ ist die gesuchte Größe und 
+$\sigma$ ergibt sich aus der Theorie, wie zum Beispiel der 
+Quantenelektordynamik. \\
+Im Detektor gilt:
+\[ N_{det} = \sigma \mathcal{L}_{int} \cdot \epsilon + \sigma_u 
+\mathcal{L}_{int} \cdot \epsilon_u  \]
+Mit $\sigma_u$ als Wirkungsquerschnitt des Untergrundes. Die Größen $\epsilon$ 
+und $\epsilon_u$ beschreiben die Detektoreffizienz, bzw. -akzeptanz und sind 
+kleiner 1. \\
+\textbf{Beispiel LEP:} Dabei handelt es sich um einen $e^+ e^-$-Beschleuniger. 
+\\
+Als Referenz wird die Bhabha-Streuung genutzt. $e^+e^- \longrightarrow e^+e^-$\\
+\\
+\textbf{Bild}\\
+\\
+\[ S = (p_1 + p_2)^2 = (p_3 + p_4)^2 \]
+\[ t = (p_3 - p_1)^2 = (p_4 - p_2)^2 = - \frac{s}{2} (1 -\cos{\theta}) \]
+für masselose Teilchen. 
+\[\frac{d\sigma}{d\Omega} = \frac{1}{4s} \left( \frac{3 + \cos{\theta}^2}{1 - 
+\cos{\theta}} \right)^2 \alpha^2 \]
+mit der elektromagnetischen Kopplung:
+\[ \alpha = \frac{\mathrm{e}^2}{4\pi} \]
+Für kleine Streuwinkel ($\sigma$ groß, $\theta << 1$) 
+\[ \cos{\theta} \approx 1 - \frac{\theta^2}{2} \]
+\[ d\Omega = d\phi d \cos{\theta} = 2\pi \theta d\theta \hspace{0.5cm} 
+\Longrightarrow \hspace{0.5cm} \frac{d\sigma}{d\theta} = 
+\frac{d\sigma}{d\Omega} 2\pi \theta = \frac{32\pi \alpha^2}{s} 
+\frac{1}{\theta^3} \sim \frac{1}{\theta^3} \]
+\\
+\textbf{Bild}\\
+\\
+Messgenauigkeit der Luminosität ist begrenzt durch Theorievorhersage für 
+$e^+e^- \longrightarrow e^+e^-$:
+\[ \frac{\Delta \mathcal{L}}{\mathcal{L}} \approx 0,05\% \]
+\textbf{Beispiel LHC:} Luminositätskalibration mit elastischer pp-Streuung. \\
+\begin{itemize}
+	\item[] elastische Streuung: pp $\longrightarrow$ pp
+	\item[] unelastische Streuung: pp $\longrightarrow$ Hadronen
+\end{itemize}
+Dabei ist der Referenzprozess pp $\longrightarrow$ pp einigermaßen gut 
+berechenbar.\\
+\\
+\textbf{Bild}\\
+\\
+Der totaler Wirkungsquerschnitt ergibt sich aus:
+\[ \sigma_{tot} = \sigma_{el} + \sigma_{unel} \] 
+Der Wirkungsquerschnitt für die elastische Streuung lässt sich nur mit 
+spezieller Beschleunigerkonfiguration messen. \\
+Der Wirkungsquerschnitt der unelastischen Streuung ist als Rate der 
+Hadronenproduktion messbar. \\
+Die Genauigkeit der Methode beträgt etwa $2-3\%$
